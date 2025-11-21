@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>FusionSovereignty.com — Souveraineté énergétique à l’ère de la fusion</title>
+
+  <meta name="description" content="FusionSovereignty.com — actif numérique stratégique pour la doctrine de souveraineté énergétique à l’ère de la fusion : comment la fusion nucléaire s’intègre aux stratégies d’autonomie, de sécurité, d’industrie et de souveraineté numérique.">
+
+  <!-- Canonical & hreflang -->
+  <link rel="canonical" href="https://www.fusionsovereignty.com/" />
+  <link rel="alternate" href="https://www.fusionsovereignty.com/" hreflang="fr" />
+  <link rel="alternate" href="https://www.fusionsovereignty.com/" hreflang="en" />
+  <link rel="alternate" href="https://www.fusionsovereignty.com/" hreflang="x-default" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="FusionSovereignty.com — Fusion & Energy Sovereignty" />
+  <meta property="og:description" content="Category-defining .com for Fusion Sovereignty: fusion as a pillar of energy, industrial and digital sovereignty." />
+  <meta property="og:url" content="https://www.fusionsovereignty.com/" />
+  <meta property="og:image" content="https://www.fusionsovereignty.com/og.jpg" />
+  <meta property="og:image:alt" content="FusionSovereignty.com — digital asset for fusion sovereignty" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://www.fusionsovereignty.com/og.jpg" />
+
+  <!-- Icons (facultatif si tu les ajoutes plus tard) -->
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "FusionSovereignty.com",
+    "url": "https://www.fusionsovereignty.com/",
+    "inLanguage": ["fr-FR","en-GB","en-US"],
+    "description": "FusionSovereignty.com is a global banner for the doctrine of energy sovereignty in the age of fusion — linking fusion technologies to energy, industrial, defence and digital sovereignty strategies.",
+    "sameAs": ["https://www.linkedin.com/company/fusionsovereignty"],
+    "potentialAction": {
+      "@type": "CommunicateAction",
+      "target": "mailto:contact@fusionsovereignty.com"
+    }
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#020819;
+      --card:#050f23;
+      --card-soft:#07142d;
+      --border:#1f2a45;
+      --text:#e5ecff;
+      --muted:#98a2c7;
+      --accent:#7fd0ff;
+      --accent-soft:#122840;
+      --chip:#101a33;
+      --shadow:0 16px 40px rgba(0,0,0,.55);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html,body{
+      margin:0;
+      padding:0;
+      background:radial-gradient(circle at top,#0b1220 0,#020617 55%,#000 100%);
+      color:var(--text);
+      font:15px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Ubuntu,Arial,sans-serif;
+      -webkit-font-smoothing:antialiased;
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{
+      max-width:1040px;
+      margin:0 auto;
+      padding:28px 20px 32px;
+    }
+    .topbar{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin-bottom:20px;
+      gap:12px;
+    }
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      background:var(--accent-soft);
+      border:1px solid rgba(148,163,184,.35);
+      border-radius:999px;
+      padding:6px 12px;
+      color:#dbeafe;
+      font-size:13px;
+    }
+    .badge-dot{
+      width:8px;
+      height:8px;
+      border-radius:999px;
+      background:radial-gradient(circle,#4ade80 0,#16a34a 55%,#052e16 100%);
+      box-shadow:0 0 0 6px rgba(34,197,94,.23);
+    }
+    .lang{
+      display:flex;
+      gap:8px;
+      align-items:center;
+    }
+    .lang button{
+      background:#020618;
+      color:var(--text);
+      border:1px solid var(--border);
+      border-radius:999px;
+      padding:6px 12px;
+      font-size:13px;
+      cursor:pointer;
+    }
+    .lang button[aria-pressed="true"]{
+      background:var(--accent);
+      color:#020819;
+      border-color:transparent;
+    }
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      border:1px solid var(--border);
+      padding:24px 22px 22px;
+      box-shadow:var(--shadow);
+      margin-bottom:16px;
+    }
+    .hero h1{
+      margin:0 0 8px;
+      font-size:40px;
+      letter-spacing:.4px;
+    }
+    .hero-tag{
+      font-size:15px;
+      color:var(--muted);
+      margin:0 0 10px;
+    }
+    img.logo{
+      max-width:260px;
+      height:auto;
+      display:block;
+      margin:8px 0 14px;
+      border-radius:14px;
+    }
+    .muted{color:var(--muted);}
+    .cta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin:16px 0 6px;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      padding:9px 15px;
+      border-radius:999px;
+      border:1px solid #21325b;
+      background:#0b1631;
+      color:#e5ecff;
+      font-size:14px;
+      cursor:pointer;
+      text-decoration:none;
+    }
+    .btn.primary{
+      background:var(--accent);
+      color:#020819;
+      border-color:transparent;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(12,1fr);
+      gap:18px;
+    }
+    .col-6{grid-column:span 6;}
+    .col-12{grid-column:span 12;}
+    @media (max-width:860px){
+      .col-6{grid-column:span 12;}
+      .hero h1{font-size:32px;}
+    }
+    .section-title{
+      font-size:17px;
+      margin:0 0 8px;
+    }
+    .chip{
+      display:inline-block;
+      background:var(--chip);
+      border-radius:999px;
+      border:1px solid var(--border);
+      padding:6px 10px;
+      font-size:13px;
+      color:#d1ddff;
+    }
+    .list{
+      display:grid;
+      gap:8px;
+      margin:8px 0;
+    }
+    .foot{
+      font-size:12px;
+      color:var(--muted);
+      margin-top:18px;
+      opacity:.85;
+    }
+    .ico{
+      width:16px;
+      height:16px;
+      display:inline-block;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        <span>Actif numérique — doctrine « Fusion Sovereignty »</span>
+      </div>
+      <div class="lang">
+        <button id="btn-fr" aria-pressed="true">FR</button>
+        <button id="btn-en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+
+    <!-- ================= HERO FR ================= -->
+    <section class="card hero" data-fr>
+      <h1>FusionSovereignty.com</h1>
+      <p class="hero-tag">La doctrine de souveraineté énergétique à l’ère de la fusion.</p>
+      <img class="logo" src="/logo-fusionsovereignty%20-%20Copie.png" alt="FusionSovereignty.com" loading="eager" />
+      <p class="muted">
+        <b>FusionSovereignty.com</b> est un <b>.com exact-match</b> pour nommer la doctrine
+        de <b>souveraineté énergétique à l’ère de la fusion</b> : comment la fusion nucléaire devient
+        un pilier d’<b>autonomie stratégique</b> (énergie, défense, industrie, compute/IA),
+        aux côtés de la fission et des renouvelables. :contentReference[oaicite:1]{index=1}
+      </p>
+      <p class="muted">
+        Le domaine sert de <b>bannière neutre</b> pour un programme national ou européen
+        « Fusion Sovereignty », une alliance public-privé ou un observatoire stratégique
+        reliant fusion, sécurité énergétique et souveraineté numérique. 
+      </p>
+      <div class="cta">
+        <a class="btn primary"
+           href="mailto:contact@fusionsovereignty.com?subject=FusionSovereignty.com%20-%20NDA%20%2F%20Proposition&body=Bonjour%2C%0D%0A%0D%0AJe%20souhaite%20obtenir%20votre%20NDA%20et%2Fou%20proposer%20une%20offre%20pour%20FusionSovereignty.com.%0D%0AEntreprise%20%3A%20%0D%0ANom%20%2F%20Fonction%20%3A%20%0D%0AUsage%20envisage%CC%81%20%3A%20%0D%0ABudget%20indicatif%20%3A%20%0D%0A%0D%0ACordialement%2C">
+          Proposer une offre / Demander un NDA
+        </a>
+        <a class="btn" href="#value-fr">Pourquoi ce nom ?</a>
+        <a class="btn" href="https://www.linkedin.com/company/fusionsovereignty" target="_blank" rel="noopener">
+          <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M4.98 3.5C4.98 4.88 3.85 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.8v2h.05c.53-1 1.84-2.05 3.78-2.05 4.04 0 4.79 2.66 4.79 6.13V23h-4v-6.5z"/>
+          </svg>
+          LinkedIn
+        </a>
+      </div>
+      <p class="muted" style="margin-top:8px;">
+        <b>Nota :</b> ce site ne fournit ni avis de sûreté nucléaire, ni licence, ni certification.
+        Il présente un <b>actif de nommage descriptif</b>. Toute utilisation opérationnelle relève
+        de la seule responsabilité de l’acquéreur et de ses autorités de tutelle. 
+      </p>
+    </section>
+
+    <!-- ================= VALEUR / USAGES FR ================= -->
+    <section class="card" id="value-fr" data-fr>
+      <div class="grid">
+        <div class="col-6">
+          <h2 class="section-title">Pourquoi FusionSovereignty.com a de la valeur</h2>
+          <div class="list">
+            <div class="chip">Nom de catégorie pour la doctrine « Fusion Sovereignty »</div>
+            <div class="chip">Lisible au niveau ministres, états-majors, Boards</div>
+            <div class="chip">Relie fusion, autonomie énergétique, défense et compute sovereignty</div>
+            <div class="chip">Bannière neutre — compatible UE, OTAN-aligned ou initiative privée</div>
+            <div class="chip">.com global défensif si le concept se généralise</div>
+          </div>
+        </div>
+        <div class="col-6">
+          <h2 class="section-title">Exemples de cas d’usage</h2>
+          <div class="list">
+            <div class="chip">Programme national / européen « Fusion Sovereignty »</div>
+            <div class="chip">Alliance public-privé (État, utilities, start-ups fusion, équipementiers)</div>
+            <div class="chip">Observatoire / think tank fusion &amp; souveraineté énergétique</div>
+            <div class="chip">Portail reliant fusion, data centers et souveraineté numérique</div>
+          </div>
+        </div>
+      </div>
+      <p class="muted">
+        FusionSovereignty.com ne revendique <b>aucune affiliation</b> avec ITER, les agences
+        de sûreté ou les programmes existants, sauf si un futur acquéreur décide de l’utiliser
+        comme bannière officielle. 
+      </p>
+    </section>
+
+    <!-- ================= PROCESS / BRIEFS FR ================= -->
+    <section class="card" data-fr>
+      <h2 class="section-title">Acquisition &amp; documents</h2>
+      <p class="muted">
+        Process type&nbsp;: contact &rarr; NDA &rarr; échanges stratégiques &rarr; offre &rarr; escrow &rarr;
+        transfert du domaine &rarr; communication choisie. Seul le nom de domaine
+        <b>FusionSovereignty.com</b> est cédé, sauf accord explicite sur un périmètre plus large. 
+      </p>
+      <div class="cta">
+        <a class="btn" href="/Fusionsovereignty%20brief%20acquisition-202511.pdf"
+           target="_blank" rel="noopener" type="application/pdf">
+          Ouvrir le Brief (FR)
+        </a>
+        <a class="btn primary" href="/Fusionsovereignty%20brief%20acquisition-202511.pdf"
+           download="Acquisition-Brief-FusionSovereignty-FR-202511.pdf" type="application/pdf">
+          Télécharger (FR, PDF)
+        </a>
+        <a class="btn" href="/Fusionsovereignty%20brief%20acquisition-EN-202511.pdf"
+           target="_blank" rel="noopener" type="application/pdf">
+          Open Brief (EN)
+        </a>
+        <a class="btn primary" href="/Fusionsovereignty%20brief%20acquisition-EN-202511.pdf"
+           download="Acquisition-Brief-FusionSovereignty-EN-202511.pdf" type="application/pdf">
+          Download (EN, PDF)
+        </a>
+      </div>
+      <p class="muted">
+        Contact direct&nbsp;:
+        <a href="mailto:contact@fusionsovereignty.com">contact@fusionsovereignty.com</a>
+      </p>
+    </section>
+
+    <!-- ================= HERO EN ================= -->
+    <section class="card hero" data-en hidden>
+      <h1>FusionSovereignty.com</h1>
+      <p class="hero-tag">The strategic doctrine for fusion-powered energy sovereignty.</p>
+      <img class="logo" src="/logo-fusionsovereignty%20-%20Copie.png" alt="FusionSovereignty.com" loading="eager" />
+      <p class="muted">
+        <b>FusionSovereignty.com</b> is an <b>exact-match .com</b> for the doctrine of
+        <b>energy sovereignty in the age of fusion</b> — positioning fusion as a pillar of
+        <b>strategic autonomy</b> alongside fission and renewables, and tying it to industrial,
+        defence and <b>compute sovereignty</b>. :contentReference[oaicite:6]{index=6}
+      </p>
+      <p class="muted">
+        The domain is a <b>neutral banner</b> for a national/EU Fusion Sovereignty Programme,
+        a public-private coalition, or an observatory linking fusion, security of supply and
+        digital power. 
+      </p>
+      <div class="cta">
+        <a class="btn primary"
+           href="mailto:contact@fusionsovereignty.com?subject=FusionSovereignty.com%20-%20NDA%20%2F%20Offer&body=Hello%2C%0D%0A%0D%0AI%27d%20like%20to%20request%20your%20NDA%20and%2For%20submit%20an%20offer%20for%20FusionSovereignty.com.%0D%0ACompany%3A%20%0D%0AName%20%2F%20Role%3A%20%0D%0AIntended%20use%3A%20%0D%0ABudget%20range%3A%20%0D%0ABest%2C">
+          Submit an offer / Request NDA
+        </a>
+        <a class="btn" href="#value-en">Why this name?</a>
+        <a class="btn" href="https://www.linkedin.com/company/fusionsovereignty" target="_blank" rel="noopener">
+          <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M4.98 3.5C4.98 4.88 3.85 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.8v2h.05c.53-1 1.84-2.05 3.78-2.05 4.04 0 4.79 2.66 4.79 6.13V23h-4v-6.5z"/>
+          </svg>
+          LinkedIn
+        </a>
+      </div>
+      <p class="muted" style="margin-top:8px;">
+        <b>Note:</b> this site does not provide nuclear safety assessments, licences, certifications
+        or guarantees. It presents a <b>descriptive naming asset</b> only. Any programme, doctrine
+        or claims built on this name remain under the buyer’s sole responsibility. :contentReference[oaicite:8]{index=8}
+      </p>
+    </section>
+
+    <!-- ================= VALUE / PROCESS EN ================= -->
+    <section class="card" id="value-en" data-en hidden>
+      <div class="grid">
+        <div class="col-6">
+          <h2 class="section-title">Why FusionSovereignty.com is valuable</h2>
+          <div class="list">
+            <div class="chip">Category-defining name for « Fusion Sovereignty »</div>
+            <div class="chip">Board-level wording for ministries, agencies, alliances</div>
+            <div class="chip">Connects fusion to energy, defence, industrial & compute sovereignty</div>
+            <div class="chip">Neutral banner for states, alliances or private initiatives</div>
+            <div class="chip">Defensive .com if the doctrine spreads globally</div>
+          </div>
+        </div>
+        <div class="col-6">
+          <h2 class="section-title">Example use cases</h2>
+          <div class="list">
+            <div class="chip">National / EU Fusion Sovereignty Programme</div>
+            <div class="chip">Public–private alliance (utilities, fusion start-ups, defence/industry)</div>
+            <div class="chip">Observatory / think tank on fusion & strategic autonomy</div>
+            <div class="chip">Interface between fusion, data centers and digital sovereignty strategies</div>
+          </div>
+        </div>
+      </div>
+      <p class="muted">
+        FusionSovereignty.com has <b>no built-in affiliation</b> with ITER, nuclear safety
+        authorities or any specific government programme, unless a buyer formally makes it
+        their banner. :contentReference[oaicite:9]{index=9}
+      </p>
+      <h2 class="section-title" style="margin-top:14px;">Acquisition & documents</h2>
+      <p class="muted">
+        Typical process: contact &rarr; NDA &rarr; strategic call &rarr; formal offer &rarr; escrow &rarr;
+        transfer &rarr; public communication. Only the <b>FusionSovereignty.com</b> domain is sold,
+        unless explicitly extended. :contentReference[oaicite:10]{index=10}
+      </p>
+      <div class="cta">
+        <a class="btn" href="/Fusionsovereignty%20brief%20acquisition-EN-202511.pdf"
+           target="_blank" rel="noopener" type="application/pdf">
+          Open Brief (EN)
+        </a>
+        <a class="btn primary" href="/Fusionsovereignty%20brief%20acquisition-EN-202511.pdf"
+           download="Acquisition-Brief-FusionSovereignty-EN-202511.pdf" type="application/pdf">
+          Download (EN, PDF)
+        </a>
+        <a class="btn" href="/Fusionsovereignty%20brief%20acquisition-202511.pdf"
+           target="_blank" rel="noopener" type="application/pdf">
+          Ouvrir le Brief (FR)
+        </a>
+        <a class="btn primary" href="/Fusionsovereignty%20brief%20acquisition-202511.pdf"
+           download="Acquisition-Brief-FusionSovereignty-FR-202511.pdf" type="application/pdf">
+          Télécharger (FR, PDF)
+        </a>
+      </div>
+      <p class="muted">
+        Direct contact:
+        <a href="mailto:contact@fusionsovereignty.com">contact@fusionsovereignty.com</a>
+      </p>
+    </section>
+
+    <p class="foot">
+      © FusionSovereignty.com — actif numérique descriptif. Aucune affiliation implicite avec les
+      autorités, opérateurs ou programmes de fusion existants. Pas de conseil juridique, financier,
+      technologique ou réglementaire. — Contact : <a href="mailto:contact@fusionsovereignty.com">contact@fusionsovereignty.com</a>
+    </p>
+  </div>
+
+  <script>
+    const frBtn = document.getElementById('btn-fr');
+    const enBtn = document.getElementById('btn-en');
+
+    function setLang(lang){
+      document.querySelectorAll('[data-fr]').forEach(el => el.hidden = (lang !== 'fr'));
+      document.querySelectorAll('[data-en]').forEach(el => el.hidden = (lang !== 'en'));
+      frBtn.setAttribute('aria-pressed', String(lang === 'fr'));
+      enBtn.setAttribute('aria-pressed', String(lang === 'en'));
+      document.documentElement.lang = lang;
+    }
+
+    frBtn.addEventListener('click', () => setLang('fr'));
+    enBtn.addEventListener('click', () => setLang('en'));
+
+    setLang('fr');
+  </script>
+</body>
+</html>
