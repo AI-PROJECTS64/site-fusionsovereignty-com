@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -26,7 +26,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://www.fusionsovereignty.com/og.jpg" />
 
-  <!-- Icons (facultatif si tu les ajoutes plus tard) -->
+  <!-- Icons -->
   <link rel="icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
@@ -236,7 +236,7 @@
         <b>FusionSovereignty.com</b> est un <b>.com exact-match</b> pour nommer la doctrine
         de <b>souveraineté énergétique à l’ère de la fusion</b> : comment la fusion nucléaire devient
         un pilier d’<b>autonomie stratégique</b> (énergie, défense, industrie, compute/IA),
-        aux côtés de la fission et des renouvelables. :contentReference[oaicite:1]{index=1}
+        aux côtés de la fission et des renouvelables.
       </p>
       <p class="muted">
         Le domaine sert de <b>bannière neutre</b> pour un programme national ou européen
@@ -310,14 +310,6 @@
            download="Acquisition-Brief-FusionSovereignty-FR-202511.pdf" type="application/pdf">
           Télécharger (FR, PDF)
         </a>
-        <a class="btn" href="/Fusionsovereignty%20brief%20acquisition-EN-202511.pdf"
-           target="_blank" rel="noopener" type="application/pdf">
-          Open Brief (EN)
-        </a>
-        <a class="btn primary" href="/Fusionsovereignty%20brief%20acquisition-EN-202511.pdf"
-           download="Acquisition-Brief-FusionSovereignty-EN-202511.pdf" type="application/pdf">
-          Download (EN, PDF)
-        </a>
       </div>
       <p class="muted">
         Contact direct&nbsp;:
@@ -334,7 +326,7 @@
         <b>FusionSovereignty.com</b> is an <b>exact-match .com</b> for the doctrine of
         <b>energy sovereignty in the age of fusion</b> — positioning fusion as a pillar of
         <b>strategic autonomy</b> alongside fission and renewables, and tying it to industrial,
-        defence and <b>compute sovereignty</b>. :contentReference[oaicite:6]{index=6}
+        defence and <b>compute sovereignty</b>.
       </p>
       <p class="muted">
         The domain is a <b>neutral banner</b> for a national/EU Fusion Sovereignty Programme,
@@ -357,7 +349,7 @@
       <p class="muted" style="margin-top:8px;">
         <b>Note:</b> this site does not provide nuclear safety assessments, licences, certifications
         or guarantees. It presents a <b>descriptive naming asset</b> only. Any programme, doctrine
-        or claims built on this name remain under the buyer’s sole responsibility. :contentReference[oaicite:8]{index=8}
+        or claims built on this name remain under the buyer’s sole responsibility.
       </p>
     </section>
 
@@ -387,13 +379,13 @@
       <p class="muted">
         FusionSovereignty.com has <b>no built-in affiliation</b> with ITER, nuclear safety
         authorities or any specific government programme, unless a buyer formally makes it
-        their banner. :contentReference[oaicite:9]{index=9}
+        their banner.
       </p>
       <h2 class="section-title" style="margin-top:14px;">Acquisition & documents</h2>
       <p class="muted">
         Typical process: contact &rarr; NDA &rarr; strategic call &rarr; formal offer &rarr; escrow &rarr;
         transfer &rarr; public communication. Only the <b>FusionSovereignty.com</b> domain is sold,
-        unless explicitly extended. :contentReference[oaicite:10]{index=10}
+        unless explicitly extended.
       </p>
       <div class="cta">
         <a class="btn" href="/Fusionsovereignty%20brief%20acquisition-EN-202511.pdf"
@@ -403,14 +395,6 @@
         <a class="btn primary" href="/Fusionsovereignty%20brief%20acquisition-EN-202511.pdf"
            download="Acquisition-Brief-FusionSovereignty-EN-202511.pdf" type="application/pdf">
           Download (EN, PDF)
-        </a>
-        <a class="btn" href="/Fusionsovereignty%20brief%20acquisition-202511.pdf"
-           target="_blank" rel="noopener" type="application/pdf">
-          Ouvrir le Brief (FR)
-        </a>
-        <a class="btn primary" href="/Fusionsovereignty%20brief%20acquisition-202511.pdf"
-           download="Acquisition-Brief-FusionSovereignty-FR-202511.pdf" type="application/pdf">
-          Télécharger (FR, PDF)
         </a>
       </div>
       <p class="muted">
@@ -431,17 +415,28 @@
     const enBtn = document.getElementById('btn-en');
 
     function setLang(lang){
-      document.querySelectorAll('[data-fr]').forEach(el => el.hidden = (lang !== 'fr'));
-      document.querySelectorAll('[data-en]').forEach(el => el.hidden = (lang !== 'en'));
+      document.querySelectorAll('[data-fr]').forEach(el => {
+        el.hidden = (lang !== 'fr');
+      });
+      document.querySelectorAll('[data-en]').forEach(el => {
+        el.hidden = (lang !== 'en');
+      });
+
       frBtn.setAttribute('aria-pressed', String(lang === 'fr'));
       enBtn.setAttribute('aria-pressed', String(lang === 'en'));
-      document.documentElement.lang = lang;
+
+      document.documentElement.lang = (lang === 'fr') ? 'fr' : 'en';
     }
 
     frBtn.addEventListener('click', () => setLang('fr'));
     enBtn.addEventListener('click', () => setLang('en'));
 
-    setLang('fr');
+    // Langue initiale en fonction du navigateur : FR sinon EN
+    (function initLang() {
+      const browserLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+      const initialLang = browserLang.startsWith('fr') ? 'fr' : 'en';
+      setLang(initialLang);
+    })();
   </script>
 </body>
 </html>
